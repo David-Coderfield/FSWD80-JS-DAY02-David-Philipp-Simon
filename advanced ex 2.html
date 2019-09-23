@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Advanced</title>
+</head>
+<body id="body">
+	<script>
+		//ADV EX 2
+function Yesterday() {//example: "Jan 01, 2000 / Jan 01 2000 / 2000/01/01"
+	var datestr = prompt("Enter a date");
+	var d = new Date(datestr);
+	d.setDate(d.getDate() - 1);
+	document.write(d.toDateString());
+}
+Yesterday();
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Advanced</title>
+</head>
+<body id="body">
+	<script>
+
+	//ADV EX 3
+window.onload = rndmBG();
+
+function rndmBG() {
+	var spectrumDec = Math.pow(16, 6);
+	var randomColorDec = Math.floor(Math.random()*spectrumDec)
+	var randomColorHex = randomColorDec.toString(16);
+	var Color = "#" + randomColorHex;
+	console.log(Color);
+
+	document.getElementById('body').style.backgroundColor = Color;
+
+	document.write(Color);
+}
+
+	</script>
+</body>
+</html>

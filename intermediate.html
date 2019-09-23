@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intermediate</title>
+</head>
+<body>
+	<script>
+	//Inter Ex 1
+		var newstr = (function(){
+			var str = "i am a web developer";
+			return (str.charAt(0).toUpperCase() + str.substring(1));
+		}());
+
+		document.write(newstr);
+
+	//Inter Ex 2
+	var math = Number(prompt("What's your grade in math?"));
+	var physics = Number(prompt("What's your grade in physics?"));
+	var english = Number(prompt("What's your grade in english?"));
+
+	function Sum_Avg() {
+		sum = math+physics+english;
+		avg = sum/3;
+		document.write("<br>Your sum is " + sum + ".<br>Your average is " + avg + ".");
+	}
+	Sum_Avg();
+	</script>
+</body>
+</html>

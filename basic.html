@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic</title>
+</head>
+<body>
+	
+	<script>
+		//BASIC 1
+		function crystalGazer(job_title, location, partners_name, number_children) {
+			var msg = "You will be a " + job_title + " in " + location + " and married to " + partners_name + " with " + number_children + " children.";
+			document.write(msg)
+		}
+		crystalGazer("Arzt", "Wien", "Brudi", 72);
+
+		//BASIC 2
+		function ageCalculator(birthYear, currentYear) {
+			var a = currentYear - birthYear - 1;
+			var b = currentYear - birthYear;
+			document.write("<br>You are either " + a + " or " + b + " years old.");
+		}
+		ageCalculator(1988, 2019);
+
+		//BASIC 3
+		function ageCalculatorAuto(birthYear) {
+			var d = new Date();
+			var y = d.getFullYear();
+			var a = y - birthYear - 1;
+			var b = y - birthYear;
+			document.write("<br>You are either " + a + " or " + b + " years old.");
+		}
+		ageCalculatorAuto(1988);
+
+		//BASIC 4
+		function toRad(degrees) {
+			var rad = (degrees * (Math.PI/180));
+			return rad;
+		}
+		document.write("<br>" + toRad(90));
+
+
+		//BASIC 5
+		function Area_Volume(x, y, z) {
+			var area = x*y;
+			var volume = x*y*z;
+			document.write("<br>The area is " + area);
+			document.write("<br>The volume is " + volume);
+		}
+		Area_Volume(1,2,3);
+
+
+		//BASIC 6
+		try {
+			var person = prompts("Please enter your name", "Harry Potter");
+
+    	document.getElementById("message").innerHTML =
+
+    "Hello " + person + "! How are you today?";
+  	}
+  	catch (errorrrrr) {
+  		document.write("<br>" + errorrrrr.message);
+  	}
+
+
+	</script>
+</body>
+</html>
